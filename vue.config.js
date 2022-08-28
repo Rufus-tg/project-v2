@@ -1,6 +1,6 @@
 module.exports = {
+    pulicPath:'.',
     devServer: {
-        pulicPath:'.',
         open: true,
         proxy: {
             '/api': {
