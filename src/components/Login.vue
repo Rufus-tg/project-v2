@@ -56,7 +56,7 @@ export default {
                     setToken('username', res.data.username)
                     setToken('token', res.data.token)
                     this.$message({message: res.data.message, type: 'success'})
-                    this.$router.push('project-v2/home')
+                    this.$router.push('/home')
                 }
            })
         } else {
