@@ -1,5 +1,5 @@
 module.exports = {
-    pulicPath:'.',
+    publicPath:'.',
     devServer: {
         open: true,
         proxy: {
