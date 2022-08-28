@@ -58,7 +58,7 @@ export default {
               if(res.data.status === 200) {
                   localStorage.setItem('username', res.data.username)
                   this.$message({message: res.data.message, type: 'success'})
-                  this.$router.push('/home')
+                  this.$router.push('project-v2/home')
               }
           })
           .catch(err => {
