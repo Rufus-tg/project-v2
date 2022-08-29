@@ -6,7 +6,7 @@ const service = axios.create({
     baseURL: '/api', // baseURL会自动加在请求地址上
     timeout: 3000
 })
-const root = 'http://1.116.64.64:5004/api2';
+const root = 'https://1.116.64.64:5004/api2';
 // 添加请求拦截器
 service.interceptors.request.use((config) => {
     // 在请求之前做些什么(获取并设置token)
