@@ -21,7 +21,7 @@
 <script>
 import { nameRule, passRule } from '../utils/vaildate.js'
 import { setToken } from '@/utils/setToken.js'
-import { login } from '@/api/api.js'
+// import { login } from '@/api/api.js'
 export default {
   data() {
     return {
@@ -36,7 +36,7 @@ export default {
     };
   },
   methods: {
-    login(form) {
+    login() {
        setToken('username', "assd")
       setToken('token', "assd")
       this.$router.push('/home')
