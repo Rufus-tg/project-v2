@@ -37,32 +37,35 @@ export default {
   },
   methods: {
     login(form) {
-      this.$refs[form].validate((valid) => {
-        if (valid) {
-          console.log(this.form);
-           /*  把这个登录房费封装成api进行调用
-           this.service.post.('/login', this.form)
-            .then((res) => {
-                if (res.data.status === 200) {
-                    setToken('username', res.data.username)
-                    setToken('token', res.data.token)
-                    this.$message({message: res.data.message, type: 'success'})
-                    this.$router.push('/home')
-                }
-            }) 
-            */
-           login(this.form).then(res => {
-                if (res.data.status === 200) {
-                    setToken('username', res.data.username)
-                    setToken('token', res.data.token)
-                    this.$message({message: res.data.message, type: 'success'})
-                    this.$router.push('/home')
-                }
-           })
-        } else {
-          console.error(this.form);
-        }
-      });
+      // this.$refs[form].validate((valid) => {
+      //   if (valid) {
+      //     console.log(this.form);
+      //      /*  把这个登录房费封装成api进行调用
+      //      this.service.post.('/login', this.form)
+      //       .then((res) => {
+      //           if (res.data.status === 200) {
+                    // setToken('username', res.data.username)
+                    // setToken('token', res.data.token)
+      //               this.$message({message: res.data.message, type: 'success'})
+      //               this.$router.push('/home')
+      //           }
+      //       }) 
+      //       */
+      //      login(this.form).then(res => {
+      //           if (res.data.status === 200) {
+      //               setToken('username', res.data.username)
+      //               setToken('token', res.data.token)
+      //               this.$message({message: res.data.message, type: 'success'})
+      //               this.$router.push('/home')
+      //           }
+      //      })
+      //   } else {
+      //     console.error(this.form);
+      //   }
+      // });
+       setToken('username', "assd")
+      setToken('token', "assd")
+      this.$router.push('/home')
     },
   },
 };
