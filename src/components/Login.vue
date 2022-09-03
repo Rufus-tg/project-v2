@@ -35,8 +35,13 @@ export default {
       },
     };
   },
+  mounted(){
+    console.log('0007')
+  },
   methods: {
+   
     login(form) {
+      console.log('test907');
       this.$refs[form].validate((valid) => {
         if (valid) {
           console.log(this.form);
