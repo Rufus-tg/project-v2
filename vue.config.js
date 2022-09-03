@@ -1,10 +1,10 @@
 module.exports = {
-    publicPath:'./',
+    publicPath:'././',
     devServer: {
         open: true,
         proxy: {
             '/api': {
-                target: 'http://1.116.64.64:5004/api2/',
+                target: 'https://www.fastmock.site/mock/a7d45b31bf32f34e39c0bf950ce7524c/api',
                 changeOrigin: true,
                 pathRewrite: {
                     '^/api': ''

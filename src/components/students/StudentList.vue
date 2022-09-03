@@ -109,7 +109,6 @@ export default {
         if (res.data.status === 200) {
           this.tableData = res.data.data;
           this.total = res.data.total;
-          console.log(res);
           this.tableData.forEach((item) => {
             // 尽量不要修改原数据
             item.sex === 1 ? (item.sex_text = "男") : (item.sex_text = "女");

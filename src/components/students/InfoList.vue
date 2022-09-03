@@ -173,6 +173,7 @@ export default {
           console.log(form, this.form)
           if(this.state) {
             info('post', this.form).then(res => {
+              console.log(res);
               if(res.data.status === 200) {
                 this.getData()
                 this.dialogFormVisible = false
